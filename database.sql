@@ -1,0 +1,25 @@
+
+CREATE DATABASE IF NOT EXISTS realestate_db;
+USE realestate_db;
+
+CREATE TABLE users(
+ id INT AUTO_INCREMENT PRIMARY KEY,
+ name VARCHAR(100),
+ email VARCHAR(100) UNIQUE,
+ password VARCHAR(255)
+);
+
+CREATE TABLE properties(
+ id INT AUTO_INCREMENT PRIMARY KEY,
+ title VARCHAR(200),
+ price VARCHAR(50),
+ description TEXT,
+ image VARCHAR(200)
+);
+
+CREATE TABLE bookings(
+ id INT AUTO_INCREMENT PRIMARY KEY,
+ user_id INT,
+ property_id INT,
+ date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

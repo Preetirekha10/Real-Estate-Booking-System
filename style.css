@@ -1,0 +1,146 @@
+*{
+ margin:0;
+ padding:0;
+ box-sizing:border-box;
+ font-family:"Poppins",sans-serif;
+}
+
+/* Header */
+header{
+ width:100%;
+ padding:18px 60px;
+ background:#111827;
+ display:flex;
+ align-items:center;
+ justify-content:space-between;
+ color:white;
+ box-shadow:0 0 10px rgba(0,0,0,.6);
+}
+header h1{
+ letter-spacing:1px;
+}
+nav a{
+ text-decoration:none;
+ color:white;
+ margin:0 12px;
+ padding:8px 14px;
+ border-radius:25px;
+ transition:.3s;
+}
+nav a:hover{
+ background:#fbbf24;
+ color:#000;
+}
+
+/* Banner */
+.banner{
+ height:85vh;
+ background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+ url("https://images.unsplash.com/photo-1505691723518-36a5ac3be353?w=1200")
+ center/cover no-repeat;
+ display:flex;
+ flex-direction:column;
+ justify-content:center;
+ align-items:center;
+ text-align:center;
+ color:white;
+}
+.banner h2{
+ font-size:48px;
+ text-shadow:0 0 18px #fbbf24;
+}
+.banner p{
+ font-size:18px;
+ opacity:.9;
+ margin-top:10px;
+}
+.banner a button{
+ margin-top:18px;
+ padding:12px 25px;
+ border:none;
+ background:#fbbf24;
+ border-radius:40px;
+ font-size:16px;
+ cursor:pointer;
+ transition:.4s;
+}
+.banner a button:hover{
+ transform:scale(1.1);
+ background:white;
+ color:black;
+}
+
+/* Footer */
+footer{
+ padding:20px;
+ background:#020617;
+ color:white;
+ text-align:center;
+}
+
+/* Responsive */
+@media(max-width:768px){
+ header{
+  padding:14px 20px;
+ }
+ .banner h2{
+  font-size:32px;
+ }
+}
+.contact-section{
+    width:100%;
+    padding:60px 0;
+    display:flex;
+    justify-content:center;
+    background:#f4f4f4;
+}
+
+.contact-box{
+    width:450px;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+.contact-box h2{
+    text-align:center;
+    margin-bottom:10px;
+    color:#2c3e50;
+}
+
+.contact-box p{
+    text-align:center;
+    color:#555;
+}
+
+.contact-box form{
+    margin-top:20px;
+}
+
+.contact-box input,
+.contact-box textarea{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+    border-radius:6px;
+    border:1px solid #aaa;
+    outline:none;
+}
+
+.contact-box button{
+    width:100%;
+    padding:10px;
+    border:none;
+    border-radius:6px;
+    background:#3498db;
+    color:white;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.contact-box button:hover{
+    background:#1f78b4;
+}
+
+
